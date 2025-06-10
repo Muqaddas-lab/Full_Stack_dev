@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    h1 {
+      color: rgb(220, 25, 25);
+      position: relative;
+      z-index: 1;
+      background-image: url('https://th.bing.com/th/id/OIP.gdNVfcnAjQURwqcuGIDHAQHaE8?rs=1&pid=ImgDetMain');
+      width: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    form {
+      background-color: #ffffff;
+      border-style: solid;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 300px;
+      margin-top: 20px;
+      position: relative;
+      z-index: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 600px) {
+      h1 {
+        width: 100%;
+        font-size: 24px;
+      }
+      
+      form {
+        width: 100%;
+        padding: 15px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <form action="#" method="post">
+    <label for="name" style="font-weight: bold;">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email" style="font-weight: bold;">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="message" style="font-weight: bold;">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
+
+    <input type="submit" value="Send Message">
+  </form>
+
+</body>
+</html>

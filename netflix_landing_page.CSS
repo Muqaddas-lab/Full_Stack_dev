@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-image: url('netflix_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    width: 150px;
+}
+
+.sign-in-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.email-form {
+    margin-top: 20px;
+}
+
+.email-form input {
+    padding: 10px;
+    width: 300px;
+    max-width: 80%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.email-form button {
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}

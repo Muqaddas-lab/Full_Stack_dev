@@ -1,0 +1,34 @@
+/* CSS */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer footer";
+    grid-gap: 10px;
+}
+.header { 
+    grid-area: header; background: #eef; 
+}
+.main {
+     grid-area: main; background: #efe;
+     border-style: dotted;
+    }
+.sidebar {
+     grid-area: sidebar; background: #fee; 
+    }
+.footer { 
+    grid-area: footer; background: #eef; 
+}
+/* Base: two columns 
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    }
+    */
+    /* When screen is 600px or less: switch to one column */
+@media (max-width: 600px) {
+.grid-container {
+    grid-template-columns: 1fr;
+    }}

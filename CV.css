@@ -1,0 +1,42 @@
+header {
+    text-align:left;
+    background-color:azure;
+    padding: 20px; 
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;    /*Circle shape */
+    float: right;    /*Right side alignment*/
+    margin: 10px;      /*   space around image*/
+    object-fit: cover;/*Adjust image inside circle*/
+    border: 3px solid navy;
+}
+main {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+section{
+    margin-bottom: 30px;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 15px;
+}
+section h2{
+    color: rgb(61, 39, 182);
+    border-bottom: 2px solid navy;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+} 
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  section li {
+    margin: 5px 0;
+  }
+  
